@@ -1,0 +1,141 @@
+.main-home-div {
+  background-image: url(.././../../assets/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 1px rgb(160, 160, 160);
+  margin-top: -72px;
+}
+
+.main-home-div button {
+  background: #f4d03f;
+  padding: 5px 30px;
+  border-radius: 17px;
+  font-family: "Poppins", sans-serif;
+  border: 1px white solid;
+  color: white;
+  transition: all 0.5s;
+}
+.main-home-div button:hover {
+  background: #d8b113;
+}
+
+button a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.three-divs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.three-divs h3 {
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+}
+
+.home-1,
+.home-2,
+.home-3 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  /*border: 1px #808080 solid;*/
+  border-radius: 25px;
+  padding: 25px;
+  margin: 10px;
+  /*-moz-box-shadow: 0 0 7px #85c1e9;
+  -webkit-box-shadow: 0 0 7px #85c1e9;
+  box-shadow: 0 0 7px #85c1e9;*/
+}
+
+.mom {
+  transform: skewX(-7deg);
+  border-radius: 17px;
+  width: 300px;
+  height: 270px;
+  margin: 0 0 25px 0;
+  -moz-box-shadow: 0 0 7px #949494;
+  -webkit-box-shadow: 0 0 7px #949494;
+  box-shadow: 0 0 7px #949494;
+}
+
+.clients {
+  background-image: url(../../../assets/images/hom2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.home-text-clients {
+  text-align: center;
+  width: 700px;
+}
+
+.home-text-clients p {
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px white;
+}
+
+.text-dark {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .main-home-div {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 823px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-text-clients {
+    text-align: center;
+    width: 400px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 555px) {
+  .mom {
+    width: 220px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 476px) {
+  .main-home-div {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-text-clients {
+    text-align: center;
+    width: 270px;
+    padding: 0 15px;
+  }
+  .clients {
+    height: 60vh;
+  }
+  .home-text-clients p {
+    font-size: 17px;
+  }
+}

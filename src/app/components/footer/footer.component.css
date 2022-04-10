@@ -1,0 +1,13 @@
+.me-4 {
+  margin-right: 15px;
+}
+
+.olo {
+  box-shadow: 0 3px 4px 2px rgb(160, 160, 160);
+}
+
+@media (max-width: 600px) {
+  .olo {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,59 @@
+<div class="trainers-main">
+  <div class="sections-main">
+    <h1 class="text-center hh">Treneri</h1>
+    <hr />
+
+    <div class="filter-div">
+      <div class="filter">
+        <div>
+          <select
+            class="form-select grad inpt"
+            aria-label="Default select example"
+            [(ngModel)]="fil"
+          >
+            <option selected>Odaberi grad...</option>
+            <option *ngFor="let grad of gradovi; let i = index" value="1">
+              {{ grad.ime }}
+            </option>
+          </select>
+        </div>
+        <div>
+          <select
+            class="form-select cat inpt"
+            aria-label="Default select example"
+            [(ngModel)]="cat"
+          >
+            <option selected>Odaberi kategoriju...</option>
+            <option *ngFor="let ka of kategorija; let kindex = index">
+              {{ ka.kat }}
+            </option>
+          </select>
+        </div>
+        <div>
+          <button class="find">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="guys-div mt-5">
+      <div class="two-trainers" *ngFor="let t of treneri | filter: fil">
+        <div class="col-md-6">
+          <div class="first-t">
+            <img [src]="t.image" alt="" />
+            <h3 class="mt-3">{{ t.ime }}</h3>
+            <hr />
+            <p>
+              {{ t.opis }}
+            </p>
+            <p><strong>Grad:</strong> {{ t.grad }}</p>
+            <p><strong>Tip treninga:</strong> {{ t.tip }}</p>
+            <button class="contact-guy">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
